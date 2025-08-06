@@ -34,7 +34,7 @@ def userDetail():
     results = cur.fetchall()
     print(results)
     cur.close()
-    return jsonify (results )
+    return jsonify (results)
 
 
 @app.route('/addpeople_form', methods=['GET'])
@@ -86,10 +86,6 @@ def deletepeople():
 @app.route("/delete_form" ,methods = ["GET"])
 def delete_Form():
     return render_template("delete.html")
-
-@app.route("/myweb",methods = ["GET"])
-def myweb():
-    return render_template("index.html")
 if __name__ == '__main__':
     app.run()
     
