@@ -23,9 +23,9 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/blog", methods=["GET"])  
+@app.route("/post", methods=["GET"])  
 def blog():
-    return render_template("blog.html")
+    return render_template("post.html")
 
 @app.route("/contact", methods=["GET"])  
 def contact():

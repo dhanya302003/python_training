@@ -1,300 +1,257 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Classic - Responsive Bootstrap 4.0 Template</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Xtra Blog</title>
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+    <link href="static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="static/css/templatemo-xtra-blog.css" rel="stylesheet">
 <!--
-Classic Template
-http://www.templatemo.com/tm-488-classic
+    
+TemplateMo 553 Xtra Blog
+
+https://templatemo.com/tm-553-xtra-blog
+
 -->
-    <!-- load stylesheets -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">  <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="static/css/bootstrap.min.css">                                      <!-- Bootstrap style -->
-    <link rel="stylesheet" href="static/css/templatemo-style.css">                                   <!-- Templatemo style -->
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-          <![endif]-->
 </head>
-
-    <body>
-       
-        <div class="tm-header">
-            <div class="container-fluid">
-                <div class="tm-header-inner">
-                    <a href="#" class="navbar-brand tm-site-name">Classic</a>
-                    
-                    <!-- navbar -->
-                    <nav class="navbar tm-main-nav">
-
-                        <button class="navbar-toggler hidden-md-up" type="button" data-toggle="collapse" data-target="#tmNavbar">
-                            &#9776;
-                        </button>
-                        
-                        <div class="collapse navbar-toggleable-sm" id="tmNavbar">
-                            <ul class="nav navbar-nav">
-                                <li class="nav-item active">
-                                    <a href="/index" class="nav-link">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/about" class="nav-link">About</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/blog" class="nav-link">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="/contact" class="nav-link">Contact</a>
-                                </li>
-                            </ul>                        
-                        </div>
-                        
-                    </nav>  
-
-                </div>                                  
+<body>
+	<header class="tm-header" id="tm-header">
+        <div class="tm-header-wrapper">
+            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="tm-site-header">
+                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
+                <h1 class="text-center">Xtra Blog</h1>
+            </div>
+            <nav class="tm-nav" id="tm-nav">            
+                <ul>
+                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                        <i class="fas fa-home"></i>
+                        Blog Home
+                    </a></li>
+                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>
+                        Single Post
+                    </a></li>
+                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                        <i class="fas fa-users"></i>
+                        About Xtra
+                    </a></li>
+                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                        <i class="far fa-comments"></i>
+                        Contact Us
+                    </a></li>
+                </ul>
+            </nav>
+            <div class="tm-mb-65">
+                <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
+                    <i class="fab fa-facebook tm-social-icon"></i>
+                </a>
+                <a href="https://twitter.com" class="tm-social-link">
+                    <i class="fab fa-twitter tm-social-icon"></i>
+                </a>
+                <a href="https://instagram.com" class="tm-social-link">
+                    <i class="fab fa-instagram tm-social-icon"></i>
+                </a>
+                <a href="https://linkedin.com" class="tm-social-link">
+                    <i class="fab fa-linkedin tm-social-icon"></i>
+                </a>
+            </div>
+            <p class="tm-mb-80 pr-5 text-white">
+                Xtra Blog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
+            </p>
+        </div>
+    </header>
+    <div class="container-fluid">
+        <main class="tm-main">
+            <!-- Search form -->
+            <div class="row tm-row">
+                <div class="col-12">
+                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
+                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
+                        <button class="tm-search-button" type="submit">
+                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
+                        </button>                                
+                    </form>
+                </div>                
             </div>            
-        </div>
-        
-
-        <div class="tm-home-img-container">
-            <img src="static/img/tm-home-img.jpg" alt="Image" class="hidden-lg-up img-fluid">
-        </div>
-
-        <section class="tm-section">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-xs-center">
-                        <h2 class="tm-gold-text tm-title">Introduction</h2>
-                        <p class="tm-subtitle">Suspendisse ut magna vel velit cursus tempor ut nec nunc. Mauris vehicula, augue in tincidunt porta, purus ipsum blandit massa.</p>
-                    </div>
-                </div>
-                <div class="row">
-
-{% for result in results %}
-        
-       
-                </div>
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-content-box">
-                            <img src="static/img/tm-img-310x180-1.jpg" alt="Image" class="tm-margin-b-20 img-fluid">
-                            <h4 class="tm-margin-b-20 tm-gold-text">{{result[0]}}</h4>
-                            <p class="tm-margin-b-20">{{result[1]}}</p>
-                            <a href="#" class="tm-btn text-uppercase">Detail</a>    
-                        </div>  
-
-                    </div>
-                     {% endfor %}
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                    
-
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                    
-                </div> <!-- row -->
-
-                <div class="row tm-margin-t-big">
-                    
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                        <div class="tm-2-col-left">
-                            
-                            <h3 class="tm-gold-text tm-title">Pellentesque fermentum mauris et posuere</h3>
-                            <p class="tm-margin-b-30">Vivamus accumsan blandit ligula. Sed lobortis efficitur sapien</p>
-                            <img src="static/img/tm-img-660x330-1.jpg" alt="Image" class="tm-margin-b-40 img-fluid">
-                            <p>
-                                Donec tempor lobortis tortor, in feugiat massa facilisis sed. Ut dignissim viverra pretium. In eu justo maximus turpis feugiat finibus scelerisque nec eros. Cras nec lectus tempor nibh vestibulum eleifend et ac elit.
-                            </p>
-                            <p>Morbi vel pharetra massa, non iaculis tortor. Nulla porttitor tincidunt felis et feugiat. Vivamus fermentum ligula justo, sit amet blandit nisl volutpat id. Fusce sagittis ultricies felis, non luctus mauris lacinia quis.</p>
-                            <p class="m-b-2"> Ut fringilla lacus ac tempor ullamcorper. Mauris iaculis placerat ex et mattis. Mauris id vulputate lectus, id fermentum sapien.
-                            </p>
-                            <a href="#" class="tm-btn text-uppercase">Read More</a>
-
+            <div class="row tm-row">
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                        <div class="tm-post-link-inner">
+                            <img src="static/img/img-01.jpg" alt="Image" class="img-fluid">                            
                         </div>
+                        <span class="position-absolute tm-new-badge">New</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Simple and useful HTML layout</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        There is a clickable image with beautiful hover effect and active title link for each post item. 
+                        Left side is a sticky menu bar. Right side is a blog content that will scroll up and down.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Travel . Events</span>
+                        <span class="tm-color-primary">June 24, 2020</span>
                     </div>
-
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
-
-                        <div class="tm-2-col-right">
-
-                            <div class="tm-2-rows-md-swap">
-                                <div class="tm-overflow-auto row tm-2-rows-md-down-2">
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-                                        <h3 class="tm-gold-text tm-title">
-                                            Categories
-                                        </h3>
-                                        <nav>
-                                            <ul class="nav">
-                                                <li><a href="#" class="tm-text-link">Tincidunt non faucibus placerat</a></li>
-                                                <li><a href="#" class="tm-text-link">Vestibulum tempor ac lectus</a></li>
-                                                <li><a href="#" class="tm-text-link">Fusce non turpis euismod</a></li>
-                                                <li><a href="#" class="tm-text-link">Nam in augue consectetur</a></li>
-                                                <li><a href="#" class="tm-text-link">Text Link Color #006699</a></li>
-                                            </ul>
-                                        </nav>    
-                                    </div> <!-- col -->
-
-                                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 tm-xs-m-t">
-                                        <h3 class="tm-gold-text tm-title">
-                                            Useful Links
-                                        </h3>
-                                        <nav>
-                                            <ul class="nav">
-                                                <li><a href="#" class="tm-text-link">Suspendisse sed dui nulla</a></li>
-                                                <li><a href="#" class="tm-text-link">Lorem ipsum dolor sit</a></li>
-                                                <li><a href="#" class="tm-text-link">Duiss nec purus et eros</a></li>
-                                                <li><a href="#" class="tm-text-link">Etiam pulvinar et ligula sed</a></li>
-                                                <li><a href="#" class="tm-text-link">Proin egestas eu felis et iaculis</a></li>
-                                            </ul>
-                                        </nav>    
-                                    </div> <!-- col -->
-                                </div>                        
-                                
-                                <div class="row tm-2-rows-md-down-1 tm-margin-t-mid">
-                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                        <h3 class="tm-gold-text tm-title tm-margin-b-30">Related Posts</h3>
-                                        <div class="media tm-related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="static/img/tm-img-240x120-1.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                        <div class="media tm-related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="static/img/tm-img-240x120-2.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                        <div class="media tm-related-post">
-                                          <div class="media-left media-middle">
-                                            <a href="#">
-                                              <img class="media-object" src="static/img/tm-img-240x120-3.jpg" alt="Generic placeholder image">
-                                            </a>
-                                          </div>
-                                          <div class="media-body">
-                                            <a href="#"><h4 class="media-heading tm-gold-text tm-margin-b-15">Lorem ipsum dolor</h4></a>
-                                            <p class="tm-small-font tm-media-description">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                          </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                            </div>
-
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>36 comments</span>
+                        <span>by Admin Nat</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                        <div class=" tm-post-link-inner">
+                            <img src="static/img/img-02.jpg" alt="Image" class="img-fluid">                            
                         </div>
-                        
+                        <span class="position-absolute tm-new-badge">New</span>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Multi-purpose blog template</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Xtra Blog</a>  is a multi-purpose HTML CSS template from TemplateMo website. 
+                        Blog list, single post, about, contact pages are included. Left sidebar fixed width and content area is a fluid full-width.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Creative . Design . Business</span>
+                        <span class="tm-color-primary">June 16, 2020</span>
                     </div>
-                </div> <!-- row -->
-
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>48 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="static/img/img-03.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">How can you apply Xtra Blog</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        You are <u>allowed</u> to convert this template as any kind of CMS theme or template for your custom website builder. 
+                        You can also use this for your clients. Thank you for choosing us.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Music . Audio</span>
+                        <span class="tm-color-primary">June 11, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>24 comments</span>
+                        <span>by John Walker</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="static/img/img-04.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">A little restriction to apply</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        You are <u>not allowed</u> to re-distribute this template as a downloadable ZIP file on any template collection
+                        website. This is strongly prohibited as we worked hard for this template. Please contact TemplateMo for more information.
+                		<br>For example, <a href="https://www.free-css.com/free-css-templates/page272/xtra-blog" target="_blank">Free-CSS</a> redistributed this Xtra Blog template on their website without asking any permission. It is an illegal act by Free-CSS website doing an unauthorized reposting.</p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Artworks . Design</span>
+                        <span class="tm-color-primary">June 4, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>72 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="static/img/img-05.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Color hexa values of Xtra Blog</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        If you wish to kindly support us, please contact us or contribute a small PayPal amount to info [at] templatemo.com that is helpful for us.
+                        <br>
+                        Title #099 New #0CC <br>
+                        <span class="tm-color-primary">Text #999 Line #CCC Next #0CC Prev #F0F0F0</span>
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Creative . Video . Audio</span>
+                        <span class="tm-color-primary">May 31, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>84 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <hr class="tm-hr-primary">
+                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                        <div class="tm-post-link-inner">
+                            <img src="static/img/img-06.jpg" alt="Image" class="img-fluid">
+                        </div>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">Donec convallis varius risus</h2>
+                    </a>                    
+                    <p class="tm-pt-30">
+                        Quisque id ipsum vel sem maximus vulputate sed quis velit. Nunc vel turpis eget orci elementum cursus vitae in eros. Quisque vulputate nulla ut dolor consectetur luctus.
+                    </p>
+                    <div class="d-flex justify-content-between tm-pt-45">
+                        <span class="tm-color-primary">Visual . Artworks</span>
+                        <span class="tm-color-primary">June 16, 2020</span>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between">
+                        <span>96 comments</span>
+                        <span>by Admin Sam</span>
+                    </div>
+                </article>
             </div>
-        </section>
-        
-        <footer class="tm-footer">
-            <div class="container-fluid">
-                <div class="row">
-                    
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        
-                        <div class="tm-footer-content-box">
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Proin eu posuere felis</h3>
-                            <div class="tm-gray-bg">
-                                <p>Classic is free HTML CSS website template provided by templatemo for everyone. Feel free to use it.</p>
-                                <p>Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                                <p><strong>Danny Egg (Executive)</strong></p>    
-                            </div>    
-                        </div>
-                                                
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-                        <div class="tm-footer-content-box tm-footer-links-container">
-                        
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Nulla tortor dolor</h3>
-                            <nav>
-                                <ul class="nav">
-                                    <li><a href="#" class="tm-footer-link">Tincidunt non faucibus</a></li>
-                                    <li><a href="#" class="tm-footer-link">Vestibulum tempor</a></li>
-                                    <li><a href="#" class="tm-footer-link">Fusce non turpis euismod</a></li>
-                                    <li><a href="#" class="tm-footer-link">Lorem ipsum dolor sit</a></li>
-                                    <li><a href="#" class="tm-footer-link">Nam in augue consectetur</a></li>
-                                    <li><a href="#" class="tm-footer-link">Text Link Color #CCCC66</a></li>
-                                </ul>
-                            </nav>
-
-                        </div>
-                        
-                    </div>
-
-                    <!-- Add the extra clearfix for only the required viewport 
-                        http://stackoverflow.com/questions/24590222/bootstrap-3-grid-with-different-height-in-each-item-is-it-solvable-using-only
-                    -->
-                    <div class="clearfix hidden-lg-up"></div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-footer-content-box">
-                        
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Etiam mollis ornare</h3>
-                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="tm-margin-b-30">
-                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p><hr class="tm-margin-b-30">
-                            <p class="tm-margin-b-30">Aenean cursus tellus mauris, quis consequat mauris dapibus id. Donec scelerisque porttitor pharetra.</p>
-                            <a href="#" class="tm-btn tm-btn-gray text-uppercase">Read More</a>
-
-                        </div>
-                        
-                    </div>
-
-                    <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3">
-
-                        <div class="tm-footer-content-box">
-                        
-                            <h3 class="tm-gold-text tm-title tm-footer-content-box-title">Fusce non turpis</h3>
-                            <div class="tm-margin-b-30">
-                                <img src="static/img/tm-img-100x100-1.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="static/img/tm-img-100x100-2.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="static/img/tm-img-100x100-3.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="static/img/tm-img-100x100-4.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="static/img/tm-img-100x100-5.jpg" alt="Image" class="tm-footer-thumbnail">
-                                <img src="static/img/tm-img-100x100-6.jpg" alt="Image" class="tm-footer-thumbnail">
-                            </div>
-                            <p class="tm-margin-b-20">Curabitur dui massa, aliquam quis mi sed, tempor vulputate tellus. Sed vestibulum non neque.</p>
-                            <a href="#" class="tm-btn tm-btn-gray text-uppercase">Browse</a>
-
-                        </div>
-                        
-                    </div>
-
-
+            <div class="row tm-row tm-mt-100 tm-mb-75">
+                <div class="tm-prev-next-wrapper">
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
+                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next">Next</a>
                 </div>
-
-                <div class="row">
-                    <div class="col-xs-12 tm-copyright-col">
-                        <p class="tm-copyright-text">Copyright 2016 Your Company Name</p>
-                    </div>
+                <div class="tm-paging-wrapper">
+                    <span class="d-inline-block mr-3">Page</span>
+                    <nav class="tm-paging-nav d-inline-block">
+                        <ul>
+                            <li class="tm-paging-item active">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">3</a>
+                            </li>
+                            <li class="tm-paging-item">
+                                <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>                
+            </div>            
+            <footer class="row tm-row">
+                <hr class="col-12">
+                <div class="col-md-6 col-12 tm-color-gray">
+                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
                 </div>
-            </div>
-        </footer>
-
-        <!-- load JS files -->
-        <script src="static/js/jquery-1.11.3.min.js"></script>             <!-- jQuery (https://jquery.com/download/) -->
-        <script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script> <!-- Tether for Bootstrap, http://stackoverflow.com/questions/34567939/how-to-fix-the-error-error-bootstrap-tooltips-require-tether-http-github-h --> 
-        <script src="static/js/bootstrap.min.js"></script>                 <!-- Bootstrap (http://v4-alpha.getbootstrap.com/) -->
-       
+                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
+                    Copyright 2020 Xtra Blog Company Co. Ltd.
+                </div>
+            </footer>
+        </main>
+    </div>
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/templatemo-script.js"></script>
 </body>
 </html>
